@@ -1,17 +1,138 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="67" started-at="2019-09-25T10:08:10 IST" finished-at="2019-09-25T10:08:10 IST">
+  <suite name="Google Home Page" duration-ms="39111" started-at="2019-09-25T15:37:37 IST" finished-at="2019-09-25T15:38:16 IST">
     <groups>
+      <group name="regression">
+        <method signature="GoogleTest.verifyImages()[pri:4, instance:com.qa.test.GoogleTest@610694f1]" name="verifyImages" class="com.qa.test.GoogleTest"/>
+        <method signature="GoogleTest.verifyMicrophoneIcon()[pri:6, instance:com.qa.test.GoogleTest@610694f1]" name="verifyMicrophoneIcon" class="com.qa.test.GoogleTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="GoogleTest.getLogo()[pri:2, instance:com.qa.test.GoogleTest@610694f1]" name="getLogo" class="com.qa.test.GoogleTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="GoogleTest.GetPagetitle()[pri:1, instance:com.qa.test.GoogleTest@610694f1]" name="GetPagetitle" class="com.qa.test.GoogleTest"/>
+        <method signature="GoogleTest.verifyGMailLink()[pri:3, instance:com.qa.test.GoogleTest@610694f1]" name="verifyGMailLink" class="com.qa.test.GoogleTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="Default test" duration-ms="67" started-at="2019-09-25T10:08:10 IST" finished-at="2019-09-25T10:08:10 IST">
-      <class name="com.qa.test.LoginTest">
-        <test-method status="PASS" signature="TestOne()[pri:0, instance:com.qa.test.LoginTest@31610302]" name="TestOne" duration-ms="16" started-at="2019-09-25T10:08:10 IST" finished-at="2019-09-25T10:08:10 IST">
+    <test name="Google Sanity" duration-ms="39111" started-at="2019-09-25T15:37:37 IST" finished-at="2019-09-25T15:38:16 IST">
+      <class name="com.qa.test.GoogleTest">
+        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="6263" started-at="2019-09-25T15:37:37 IST" finished-at="2019-09-25T15:37:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestOne -->
-      </class> <!-- com.qa.test.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- BrowserSetUP -->
+        <test-method status="PASS" signature="GetPagetitle()[pri:1, instance:com.qa.test.GoogleTest@610694f1]" name="GetPagetitle" duration-ms="26" started-at="2019-09-25T15:37:43 IST" finished-at="2019-09-25T15:37:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GetPagetitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="696" started-at="2019-09-25T15:37:43 IST" finished-at="2019-09-25T15:37:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="5207" started-at="2019-09-25T15:37:44 IST" finished-at="2019-09-25T15:37:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUP -->
+        <test-method status="PASS" signature="getLogo()[pri:2, instance:com.qa.test.GoogleTest@610694f1]" name="getLogo" duration-ms="123" started-at="2019-09-25T15:37:49 IST" finished-at="2019-09-25T15:37:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLogo -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="675" started-at="2019-09-25T15:37:49 IST" finished-at="2019-09-25T15:37:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="5855" started-at="2019-09-25T15:37:50 IST" finished-at="2019-09-25T15:37:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUP -->
+        <test-method status="PASS" signature="verifyGMailLink()[pri:3, instance:com.qa.test.GoogleTest@610694f1]" name="verifyGMailLink" duration-ms="145" started-at="2019-09-25T15:37:56 IST" finished-at="2019-09-25T15:37:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyGMailLink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="673" started-at="2019-09-25T15:37:56 IST" finished-at="2019-09-25T15:37:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="6464" started-at="2019-09-25T15:37:57 IST" finished-at="2019-09-25T15:38:03 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUP -->
+        <test-method status="PASS" signature="verifyImages()[pri:4, instance:com.qa.test.GoogleTest@610694f1]" name="verifyImages" duration-ms="135" started-at="2019-09-25T15:38:03 IST" finished-at="2019-09-25T15:38:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyImages -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="1355" started-at="2019-09-25T15:38:03 IST" finished-at="2019-09-25T15:38:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="4979" started-at="2019-09-25T15:38:05 IST" finished-at="2019-09-25T15:38:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUP -->
+        <test-method status="PASS" signature="verifyMicrophoneIcon()[pri:6, instance:com.qa.test.GoogleTest@610694f1]" name="verifyMicrophoneIcon" duration-ms="73" started-at="2019-09-25T15:38:10 IST" finished-at="2019-09-25T15:38:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMicrophoneIcon -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="683" started-at="2019-09-25T15:38:10 IST" finished-at="2019-09-25T15:38:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="4948" started-at="2019-09-25T15:38:11 IST" finished-at="2019-09-25T15:38:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserSetUP -->
+        <test-method status="PASS" signature="finalTest()[pri:7, instance:com.qa.test.GoogleTest@610694f1]" name="finalTest" duration-ms="6" started-at="2019-09-25T15:38:15 IST" finished-at="2019-09-25T15:38:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finalTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="730" started-at="2019-09-25T15:38:15 IST" finished-at="2019-09-25T15:38:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.test.GoogleTest -->
+    </test> <!-- Google Sanity -->
+  </suite> <!-- Google Home Page -->
 </testng-results>
