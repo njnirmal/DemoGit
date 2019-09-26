@@ -28,15 +28,18 @@ public class GooglePageParallelTest {
 		if (browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/Drivers/chromedriver.exe");
 			driver = new ChromeDriver();
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			driver.manage().deleteAllCookies();
-			driver.get("http://www.google.com");
+			
 		} else if (browser.equalsIgnoreCase("FireFox")) {
 
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
+		
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().deleteAllCookies();
+		driver.get("http://www.google.com");
 	}
 
 	@Test(priority = 1, groups = "sanity")

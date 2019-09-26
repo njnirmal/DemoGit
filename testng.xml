@@ -3,7 +3,7 @@
 <suite name= "Google Home Page"  verbose="2" >
   <test name="Google Sanity">
   
-  <parameter name="browser" value="chrome" />
+  <parameter name="browser" value="Firefox" />
   
   
   

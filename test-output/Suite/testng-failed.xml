@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.qa.test.GooglePageParallelTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyMicrophoneIcon"/>
+          <include name="verifyGMailLink"/>
+          <include name="verifyImages"/>
+          <include name="verifySearchText"/>
+          <include name="GetPagetitle"/>
+          <include name="finalTest"/>
+          <include name="BrowserSetUP"/>
+          <include name="getLogo"/>
+        </methods>
+      </class> <!-- com.qa.test.GooglePageParallelTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
