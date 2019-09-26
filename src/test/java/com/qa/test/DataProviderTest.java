@@ -40,6 +40,18 @@ public class DataProviderTest {
 		
 	}
 	
+	@DataProvider
+	public Object[][] getObjectData(){
+		
+		return new Object[][]
+				{
+			{"Rahul","Kumar","rk@gmail.com" ,"Password.123"},
+			{"Naveen","Bansal","Nb@gmail.com" ,"Password.123"},
+			{"Shikha","Lohia","sl@gmail.com" ,"Password.123"},
+			{"Manoj","Lodhi","ml@gmail.com" ,"Password.123"}
+				};
+		
+	}
 	@Test(dataProvider="getData")
 	public void VerifyRegisterEbayTest(String firstname,String lastname,String emailId,String passWord) throws Exception {
 		
@@ -60,13 +72,28 @@ public class DataProviderTest {
     password.clear();
     password.sendKeys(passWord);
     Thread.sleep(3000);
+	}
+	
+	@Test(dataProvider="getObjectData")
+	public void VerifyHardcodeDataProvider(String firstname,String lastname,String emailId,String passWord) throws Exception {
 		
-
-		
-		
-		
-		
-		
+    WebElement firstName= driver.findElement(By.xpath("//input[@name='firstname']"));
+    WebElement lastName =driver.findElement(By.xpath("//input[@name='lastname']"));
+    WebElement emailID=driver.findElement(By.xpath("//input[@name='reg_email__']"));
+    WebElement password=driver.findElement(By.xpath("//input[@name='reg_passwd__']"));
+    
+    firstName.clear();
+    firstName.sendKeys(firstname);
+    Thread.sleep(3000);
+    lastName.clear();
+    lastName.sendKeys(lastname);
+    Thread.sleep(3000);
+    emailID.clear();
+    emailID.sendKeys(emailId);
+    Thread.sleep(3000);
+    password.clear();
+    password.sendKeys(passWord);
+    Thread.sleep(3000);
 	}
 	
 	@AfterMethod
