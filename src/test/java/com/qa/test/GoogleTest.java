@@ -20,7 +20,7 @@ import org.testng.asserts.SoftAssert;
 public class GoogleTest {
 	
 	WebDriver driver =null;
-	
+	SoftAssert softAssert = new SoftAssert();
 	
 	@BeforeMethod()
     @Parameters({"browser"})
@@ -86,8 +86,24 @@ public class GoogleTest {
 	
 	@Test(priority=7)
 	public void finalTest() {
-		SoftAssert softAssert = new SoftAssert();
+		
+		boolean a = driver.findElement(By.xpath("//img[@alt='Google']")).isDisplayed();
+		softAssert.assertFalse(a);
+		System.out.println("Logo is displayed");
+		boolean b = driver.findElement(By.linkText("Images")).isDisplayed();
+		softAssert.assertTrue(b);
+		System.out.println("Image is displayed");
+		boolean c = driver.findElement(By.xpath("//input[@title='Search']")).isDisplayed();
+		softAssert.assertFalse(c);
+		System.out.println("Search is displayed");
+		boolean d = driver.findElement(By.xpath("//div[@aria-label='Search by voice']")).isDisplayed();
+		softAssert.assertFalse(d);
+		System.out.println("Microp phone is displayed");
+		
+		softAssert.assertAll();
+		
 	}
+	
 	@AfterMethod()
 	public void tearDown()
 	{

@@ -1,138 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="7" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Google Home Page" duration-ms="39111" started-at="2019-09-25T15:37:37 IST" finished-at="2019-09-25T15:38:16 IST">
+  <suite name="Default suite" duration-ms="89499" started-at="2019-09-26T12:03:58 IST" finished-at="2019-09-26T12:05:27 IST">
     <groups>
-      <group name="regression">
-        <method signature="GoogleTest.verifyImages()[pri:4, instance:com.qa.test.GoogleTest@610694f1]" name="verifyImages" class="com.qa.test.GoogleTest"/>
-        <method signature="GoogleTest.verifyMicrophoneIcon()[pri:6, instance:com.qa.test.GoogleTest@610694f1]" name="verifyMicrophoneIcon" class="com.qa.test.GoogleTest"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="GoogleTest.getLogo()[pri:2, instance:com.qa.test.GoogleTest@610694f1]" name="getLogo" class="com.qa.test.GoogleTest"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="GoogleTest.GetPagetitle()[pri:1, instance:com.qa.test.GoogleTest@610694f1]" name="GetPagetitle" class="com.qa.test.GoogleTest"/>
-        <method signature="GoogleTest.verifyGMailLink()[pri:3, instance:com.qa.test.GoogleTest@610694f1]" name="verifyGMailLink" class="com.qa.test.GoogleTest"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Google Sanity" duration-ms="39111" started-at="2019-09-25T15:37:37 IST" finished-at="2019-09-25T15:38:16 IST">
-      <class name="com.qa.test.GoogleTest">
-        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="6263" started-at="2019-09-25T15:37:37 IST" finished-at="2019-09-25T15:37:43 IST">
+    <test name="Default test" duration-ms="89499" started-at="2019-09-26T12:03:58 IST" finished-at="2019-09-26T12:05:27 IST">
+      <class name="com.qa.test.DataProviderTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="setup" is-config="true" duration-ms="10081" started-at="2019-09-26T12:03:59 IST" finished-at="2019-09-26T12:04:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyRegisterEbayTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="VerifyRegisterEbayTest" duration-ms="12815" started-at="2019-09-26T12:04:09 IST" data-provider="getData" finished-at="2019-09-26T12:04:21 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Nirmal]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[njnirmal@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password.10]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserSetUP -->
-        <test-method status="PASS" signature="GetPagetitle()[pri:1, instance:com.qa.test.GoogleTest@610694f1]" name="GetPagetitle" duration-ms="26" started-at="2019-09-25T15:37:43 IST" finished-at="2019-09-25T15:37:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GetPagetitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="696" started-at="2019-09-25T15:37:43 IST" finished-at="2019-09-25T15:37:44 IST">
+        </test-method> <!-- VerifyRegisterEbayTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="tearDown" is-config="true" duration-ms="802" started-at="2019-09-26T12:04:21 IST" finished-at="2019-09-26T12:04:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="5207" started-at="2019-09-25T15:37:44 IST" finished-at="2019-09-25T15:37:49 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="setup" is-config="true" duration-ms="8262" started-at="2019-09-26T12:04:22 IST" finished-at="2019-09-26T12:04:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyRegisterEbayTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="VerifyRegisterEbayTest" duration-ms="12809" started-at="2019-09-26T12:04:30 IST" data-provider="getData" finished-at="2019-09-26T12:04:43 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Vihaan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vihaan@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password.10]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserSetUP -->
-        <test-method status="PASS" signature="getLogo()[pri:2, instance:com.qa.test.GoogleTest@610694f1]" name="getLogo" duration-ms="123" started-at="2019-09-25T15:37:49 IST" finished-at="2019-09-25T15:37:49 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getLogo -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="675" started-at="2019-09-25T15:37:49 IST" finished-at="2019-09-25T15:37:50 IST">
+        </test-method> <!-- VerifyRegisterEbayTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="tearDown" is-config="true" duration-ms="753" started-at="2019-09-26T12:04:43 IST" finished-at="2019-09-26T12:04:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="5855" started-at="2019-09-25T15:37:50 IST" finished-at="2019-09-25T15:37:56 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="setup" is-config="true" duration-ms="7766" started-at="2019-09-26T12:04:44 IST" finished-at="2019-09-26T12:04:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyRegisterEbayTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="VerifyRegisterEbayTest" duration-ms="12787" started-at="2019-09-26T12:04:52 IST" data-provider="getData" finished-at="2019-09-26T12:05:05 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Vivek ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vivek@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password.10]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserSetUP -->
-        <test-method status="PASS" signature="verifyGMailLink()[pri:3, instance:com.qa.test.GoogleTest@610694f1]" name="verifyGMailLink" duration-ms="145" started-at="2019-09-25T15:37:56 IST" finished-at="2019-09-25T15:37:56 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyGMailLink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="673" started-at="2019-09-25T15:37:56 IST" finished-at="2019-09-25T15:37:57 IST">
+        </test-method> <!-- VerifyRegisterEbayTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="tearDown" is-config="true" duration-ms="789" started-at="2019-09-26T12:05:05 IST" finished-at="2019-09-26T12:05:05 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="6464" started-at="2019-09-25T15:37:57 IST" finished-at="2019-09-25T15:38:03 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="setup" is-config="true" duration-ms="8547" started-at="2019-09-26T12:05:05 IST" finished-at="2019-09-26T12:05:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyRegisterEbayTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="VerifyRegisterEbayTest" duration-ms="12743" started-at="2019-09-26T12:05:14 IST" data-provider="getData" finished-at="2019-09-26T12:05:27 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[Sonu ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Jain]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sonu@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Password.10]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- BrowserSetUP -->
-        <test-method status="PASS" signature="verifyImages()[pri:4, instance:com.qa.test.GoogleTest@610694f1]" name="verifyImages" duration-ms="135" started-at="2019-09-25T15:38:03 IST" finished-at="2019-09-25T15:38:03 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyImages -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="1355" started-at="2019-09-25T15:38:03 IST" finished-at="2019-09-25T15:38:05 IST">
+        </test-method> <!-- VerifyRegisterEbayTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.DataProviderTest@6321e813]" name="tearDown" is-config="true" duration-ms="747" started-at="2019-09-26T12:05:27 IST" finished-at="2019-09-26T12:05:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="4979" started-at="2019-09-25T15:38:05 IST" finished-at="2019-09-25T15:38:10 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserSetUP -->
-        <test-method status="PASS" signature="verifyMicrophoneIcon()[pri:6, instance:com.qa.test.GoogleTest@610694f1]" name="verifyMicrophoneIcon" duration-ms="73" started-at="2019-09-25T15:38:10 IST" finished-at="2019-09-25T15:38:10 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMicrophoneIcon -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="683" started-at="2019-09-25T15:38:10 IST" finished-at="2019-09-25T15:38:11 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="BrowserSetUP(java.lang.String)[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="BrowserSetUP" is-config="true" duration-ms="4948" started-at="2019-09-25T15:38:11 IST" finished-at="2019-09-25T15:38:15 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserSetUP -->
-        <test-method status="PASS" signature="finalTest()[pri:7, instance:com.qa.test.GoogleTest@610694f1]" name="finalTest" duration-ms="6" started-at="2019-09-25T15:38:15 IST" finished-at="2019-09-25T15:38:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finalTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.test.GoogleTest@610694f1]" name="tearDown" is-config="true" duration-ms="730" started-at="2019-09-25T15:38:15 IST" finished-at="2019-09-25T15:38:16 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.test.GoogleTest -->
-    </test> <!-- Google Sanity -->
-  </suite> <!-- Google Home Page -->
+      </class> <!-- com.qa.test.DataProviderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
